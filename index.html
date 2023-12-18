@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Trang Chủ</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="./Trang Chủ/index.css">
+  <link rel="stylesheet" href="myCSS/Trangchu.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+<div class=".container-fluid">
+
+    <div id="wrapper">
+      <header>
+        <nav class="container">
+          <a href="index.html" id="logo">
+            <h4>StylistLeather</h4>
+          </a>
+          <ul id="main-menu">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="">Dịch vụ</a>
+              <ul class="sub-menu">
+                <li><a href="Suachua.html">Phục hồi giày </a></li>
+                <li><a href="Customgiay.html">Custom giày </a></li>
+              </ul>
+            </li>
+            <li><a href="">Sản phẩm</a>
+              <ul class="sub-menu">
+                <li><a href="Chongogiay.html">Chống ố giày </a></li>
+                <li><a href="Sonchuyendung.html">Sơn cho giày </a></li>
+                <li><a href="Sanphamvsgiay.html">Bộ vệ sinh giày </a></li>
+                <li><a href="Lotgiay.html">Lót giày </a></li>
+                <li><a href="Combo.html">Combo </a></li>
+              </ul>
+            </li>
+            <li><a href="">Blog giày</a>
+              <ul class="sub-menu">
+                <li><a href="Kinhnghiem.html">Kinh nghiệm </a></li>
+                <li><a href="Tintuc.html">Tin tức</a></li>
+                <li><a href="Xuhuong.html">Xu hướng </a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul id="main-menu">
+            <div class="box">
+              <input type="text" placeholder="Tìm kiếm dịch vụ - sản phẩm ...">
+              <a href="">
+                <i class="fas fa-search"></i>
+              </a>
+            </div>
+            <li><a onclick="togglePopup()"><ion-icon name="information-circle-outline" style="cursor:pointer;"></ion-icon></a></li>
+            <li><a id="button-open"><ion-icon name="cart-outline" style="cursor:pointer;"></ion-icon></a></li>
+            <!-- Sidebar -->
+              <div id="sidebar">
+                  <a id="button-close"><i class="fas fa-times-circle"></i> </a> 
+                  <h5 style="display: flex; justify-content: center; align-items: center; margin-top: 20px; color: w;">Giỏ hàng</h5>
+                  <hr style="width: 100%;">
+                  <div id="total-section">
+                    <p id="total-price">Tổng: 0 VNĐ</p>
+                    <button id="checkout-btn">Thanh toán</button>
+                  </div>
+              </div>
+            <li><a id="btn-open"><ion-icon name="person-outline"></ion-icon></a></li>
+          </ul>
+        </nav>
+      </header>
+
+    
+    <!-- modal popup -->
+    <div id="modal-container">
+      <div id="modal">
+          <div class="modal-header">
+              <h3>Tài khoản</h3>
+              <button id="btn-close"><i class="fas fa-times-circle"></i></i></button>
+          </div>
+          <div class="modal-body">
+            <p>Tài khoản của bạn</p>
+            <p>Khách hàng mới ?</p>
+            <div>
+              <a href="Dangnhap.html"><button>Đăng nhập</button></a>
+              <a href="Dangky.html"><button>Đăng ký</button></a>
+            </div>
+          </div>
+      </div> 
+    </div>
+    <!-- end modal -->
+
+      <!-- toggle popup -->
+      <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup()">&times;</div><br>
+          <a href="Thongtindathang.html" style="color: black;"><i class="bi bi-box-seam-fill"></i> Thông tin đặt hàng</a><br>
+          <a href="Thongtinvanchuyen.html" style="color: black;"><i class="bi bi-truck"></i> Thông tin vận chuyển</a><br>
+          <a href="Thongtinhoantra.html" style="color: black;"><i class="bi bi-arrow-counterclockwise"></i> Chính sách hoàn trả</a>
+        </div>
+      </div>
+      <!-- end toggle popup -->
+
+  </div>
+
+  <main>
+
+    <!-- button back-top -->
+  <div id="backtop">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+
+
+      <!-- Carousel -->
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+        
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Images/jmg/ảnh 2.jpg" alt="" class="d-block" style="width:100%">
+          </div>
+          <div class="carousel-item">
+            <img src="Images/jmg/ảnh 3.jpg" alt="" class="d-block" style="width:100%">
+          </div>
+          <div class="carousel-item">
+            <img src="Images/jmg/ảnh 1.jpg" alt="" class="d-block" style="width:100%">
+          </div>
+        </div>
+        
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+  
+<div class="container mb-5">
+  <div class="row">
+    <div class="col-md-4 mt-5">
+      <a href="#"><img class="mb-3 card-img" src="./Trang Chủ/anh/banner2_283d5.jpg" alt=""></a>
+      <a href="#"><img class="card-img" src="./Trang Chủ/anh/instagram.png" alt="" style="max-height: 192px;"></a>
+    </div>
+    <div class="col-md-4 mt-5 ">
+      <a href="#"><img class="card-img" src="./Trang Chủ/anh/banner1_28397.jpg" alt=""></a>
+    </div>
+    <div class="col-md-4 mt-5 mb-5">
+      <a href="#"><img class="mb-3 card-img" src="./Trang Chủ/anh/2570x290_1e98c.png" alt=""></a>
+      <a href="#"><img class="card-img" src="./Trang Chủ/anh/4570x290_1ea47.png" alt=""></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="container mt-5">
+  <div class="heading-tittle">
+    <div class="row">
+      <div class="col-md-3">
+        <hr style="width: 100%; height: 10px; color: gray;">
+      </div>
+      <div class="col-md-6">
+        <h3 style="text-align: center;"><span>Sản Phẩm Chăm Sóc Giày Tốt Nhất</span></h3>
+      </div>
+      <div class="col-md-3">
+        <hr style="width: 100%; height: 10px; color: gray;">
+      </div>
+    </div>
+    
+    <p style="text-align: center;">
+      <span>Các sản phẩm vệ sinh giày, chăm sóc giày từ thương hiệu Enito, Crep Protect, Jason Markk sẽ mang đến một giải pháp phục hồi giày tối ưu nhất,<br>
+            dễ dàng tự vệ sinh giày tại nhà.</span>
+      <br><br>
+    </p>
+    <p style="text-align: center;"><span></span></p>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <!-- Nav tabs -->
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-bs-toggle="tab" href="#menu">Vệ sinh giày</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-bs-toggle="tab" href="#menu1">Chống ố, làm trắng giày</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-bs-toggle="tab" href="#menu2">Sơn chuyên dụng cho giày</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-bs-toggle="tab" href="#menu3">Chống nước cho giày</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-bs-toggle="tab" href="#menu4">Combo</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane container active" id="menu">
+    <div class="row mt-5">
+      <div class="col-md-3">
+        <div class="item-image">  
+          <a href="#">
+            <a href="sp1.html"><img class="card-img"  src="./Trang Chủ/anh/629eb4e6c47d5_bo-san-pham-ve-sinh-giay-enito.png" alt=""></a>
+          </a>
+        </div>
+        <h5 class="mt-2"><a style="text-decoration: none; color: black;" href="sp1.html">Bộ sản phẩm vệ sinh giày Enito foam cleaner kit</a></h5>
+        <p>
+          <span class="price text-danger" >420.000 Đ</span>
+        </p>
+      </div>
+      <div class="col-md-3">
+        <div class="item-image">  
+          <a href="#">
+            <a href="sp2.html"><img class="card-img " src="./Trang Chủ/anh/61de87268aa3e_bo-san-pham-ve-sinh-giay-toi-thuong-enito-ultimate-sneaker-care-kit.png" alt=""></a>
+          </a>
+        </div>
+        <h5 class="mt-2"><a style="text-decoration: none; color: black;" href="sp2.html">Bộ sản phẩm vệ sinh giày tối thượng Enito ultimate ...</a></h5>
+        <p>
+          <span class="price text-danger">590.000 Đ</span>
+        </p>
+      </div>
+      <div class="col-md-3">
+        <div class="item-image">  
+          <a href="#">
+            <a href="sp3.html"><img class="card-img " src="./Trang Chủ/anh/61de9105a5461_bo-san-pham-ve-sinh-giay-crep-protect-cure-kit.png" alt=""></a>
+          </a>
+        </div>
+        <h5 class="mt-2"><a style="text-decoration: none; color: black;" href="sp3.html">Bộ sản phẩm vệ sinh giày crep protect cure kit</a></h5>
+        <p>
+          <span class="price text-danger">520.000 Đ</span>
+        </p>
+      </div>
+      <div class="col-md-3">
+        <div class="item-image">  
+          <a href="#">
+            <a href="sp4.html"><img class="card-img " src="./Trang Chủ/anh/649902e14c9e6_bo-san-pham-ve-sinh-giay-tien-dung-crep-protect-starter-pack.png" alt=""></a>
+          </a>
+        </div>
+        <h5 class="mt-2"><a style="text-decoration: none; color: black;" href="sp4.html">Bộ sản phẩm vệ sinh giày tiện dụng crep protect starter ...</a></h5>
+        <p>
+          <span class="price text-danger">660.000 Đ</span>
+        </p>
+      </div>
+      
+    </div>
+
+  </div>
+  <div class="tab-pane container fade" id="menu1">
+    <div class="row mt-5">
+      <div class="col-md-3">
+        <div class="item-image">  
+          <a href="#">
+            <a href="#" target="_blank"><img class="card-img " src="./Trang Chủ/anh/61dfd935dd52f_san-pham-tay-o-vang-cho-de-giay-enito-sole-bright.png" alt=""></a>
+          </a>
+        </div>
+        <h5 class="mt-2"><a style="text-decoration: none; color: black;" href="#">Sản Phẩm Tẩy ố vàng cho đế giày enito sole bright</a></h5>
+        <p>
+          <span class="price text-danger">260.000 Đ</span>
+        </p>
+      </div>
+      <div class="col-md-3">
+        <div class="item-image">  
+          <a href="#">
+            <a href="#" target="_blank"><img class="card-img " src="./Trang Chủ/anh/61dfd87a0d1ac_but-repaint-de-o-vang-crep-protect-mark-on-pen.png" alt=""></a>
+          </a>
+        </div>
+        <h5 class="mt-2"><a style="text-decoration: none; color: black;" href="./các sản phẩm/sp6/index.html">Bút repaint đế ố vàng crep protect mark on pen</a></h5>
+        <p>
+          <span class="price text-danger">490.000 Đ</span>
+        </p>
+      </div>
+      <div class="col-md-3">
+        <div class="item-image">  
+          <a href="#">
+            <a href="#" target="_blank"><img class="card-img " src="./Trang Chủ/anh/61dfda6719496_but-repaint-cho-giay-bi-o-vang-enito-sneaker-pen.png" alt=""></a>
+          </a>
+        </div>
+        <h5 class="mt-2"><a style="text-decoration: none; color: black;" href="./các sản phẩm/sp7/index.html">Bút repaint cho giày bị ố vàng Enito sneaker pen</a></h5>
+        <p>
+          <span class="price text-danger">350.000 Đ</span>
+        </p>
+      </div>
+      <div class="col-md-3">
+        <div class="item-image">  
+          <a href="#">
+            <a href="#" target="_blank"><img class="card-img " src="./Trang Chủ/anh/61dfdcc6857ba_dung-dich-son-phu-xuoc-che-o-vang-enito-quick-white.png" alt=""></a>
+          </a>
+        </div>
+        <h5 class="mt-2"><a style="text-decoration: none; color: black;" href="./các sản phẩm/sp8/index.html">Dung dịch sơn phủ xước , che ố vàng Enito Quick white</a></h5>
+        <p>
+          <span class="price text-danger">210.000 Đ</span>
+        </p>
+      </div>
+      
+    </div>
+  </div>
+  <div class="tab-pane container fade" id="menu2">
+    <div class="row mt-5">
+      <div class="col-md-3">
+        <div class="item-image">  
+          <a href="#">
+            <a href="#" target="_blank"><img class="card-img " src="./Trang Chủ/anh/624d4e3d49caa_son-chuyen-dung-cho-giay-angel.png" alt=""></a>
+          </a>
+        </div>
+        <h5 class="mt-2"><a style="text-decoration: none; color: black;" href="./các sản phẩm/sp9/index.html">Sơn chuyên dụng cho giày angelus direct màu Vàng</a></h5>
+        <p>
+          <span class="price text-danger">290.000 Đ</span>
+        </p>
+      </div>
+      <div class="col-md-3">
+        <div class="item-image">  
+          <a href="#">
+            <a href="#" target="_blank"><img class="card-img " src="./Trang Chủ/anh/624d4e316a048_son-chuyen-dung-cho-giay-angel.png" alt=""></a>
+          </a>
+        </div>
+        <h5 class="mt-2"><a style="text-decoration: none; color: black;" href="./các sản phẩm/sp10/index.html">Sơn chuyên dụng cho giày angelus direct màu Đỏ</a></h5>
+        <p>
+          <span class="price text-danger">290.000 Đ</span>
+        </p>
+      </div>
+      <div class="col-md-3">
+        <div class="item-image">  
+          <a href="#">
+            <a href="#" target="_blank"><img class="card-img " src="./Trang Chủ/anh/624d4e23d5b4c_son-chuyen-dung-cho-giay-angel.png" alt=""></a>
+          </a>
+        </div>
+        <h5 class="mt-2"><a style="text-decoration: none; color: black;" href="./các sản phẩm/sp11/index.html">Sơn chuyên dụng cho giày angelus direct màu Tím</a></h5>
+        <p>
+          <span class="price text-danger">290.000 Đ</span>
+        </p>
+      </div>
+      <div class="col-md-3">
+        <div class="item-image">  
+          <a href="#">
+            <a href="#" target="_blank"><img class="card-img " src="./Trang Chủ/anh/624d4e1a6ae1c_son-chuyen-dung-cho-giay-angel.png" alt=""></a>
+          </a>
+        </div>
+        <h5 class="mt-2"><a style="text-decoration: none; color: black;" href="./các sản phẩm/sp12/index.html">Sơn chuyên dụng cho giày angelus direct màu SỮa</a></h5>
+        <p>
+          <span class="price text-danger">290.000 Đ</span>
+        </p>
+      </div>
+      
+    </div>
+  </div>
+  <div class="tab-pane container fade" id="menu3">
+    <div class="row mt-5">
+      <div class="col-md-3">
+        <div class="item-image">  
+          <a href="#">
+            <a href="#" target="_blank"><img class="card-img " src="./Trang Chủ/anh/61f36c31a184e_binh-xit-nano-chong-nuoc-va-bam-ban-cao-cap-enito-nano-repellent-v2-285ml.png" alt=""></a>
+          </a>
+        </div>
+        <h5 class="mt-2"><a style="text-decoration: none; color: black;" href="./các sản phẩm/sp13/index.html">Bình xịt nano chống nước và bám bẩn cao cấp Enito  Nano repellent V2 285ml</a></h5>
+        <p>
+          <span class="price text-danger">390.000 Đ</span>
+        </p>
+      </div>
+      <div class="col-md-3">
+        <div class="item-image">  
+          <a href="#">
+            <a href="#" target="_blank"><img class="card-img " src="./Trang Chủ/anh/61e51aeaac112_binh-xit-nano-chong-nuoc-va-bam-ban-cao-cap-crep-protect-spray.png" alt=""></a>
+          </a>
+        </div>
+        <h5 class="mt-2"><a style="text-decoration: none; color: black;" href="./các sản phẩm/sp14/index.html">Bình xịt nano chông nước và bám bẩn cao cấp crep protect spray</a></h5>
+        <p>
+          <span class="price text-danger">510.000 Đ</span>
+        </p>
+      </div>
+      
+      
+    </div>
+  </div>
+  <div class="tab-pane container fade" id="menu4">
+    <div class="row mt-5">
+      <div class="col-md-3">
+        <div class="item-image">  
+          <a href="#">
+            <a href="#" target="_blank"><img class="card-img " src="./Trang Chủ/anh/61ebbd83e3e62_perfect-care-1.png" alt=""></a>
+          </a>
+        </div>
+        <h5 class="mt-2"><a style="text-decoration: none; color: black;" href="./các sản phẩm/sp15/index.html">Perfect care 1 combo 1 Enito repellent v2 285ml + 1 Enito total cleaner kit + 1 ... </a></h5>
+        <p>
+          <span class="price text-danger">930.000 Đ</span>
+        </p>
+      </div>
+      <div class="col-md-3">
+        <div class="item-image">  
+          <a href="#">
+            <a href="#" target="_blank"><img class="card-img " src="./Trang Chủ/anh/61ebbcaa06475_perfect-care-2-combo.png" alt=""></a>
+          </a>
+        </div>
+        <h5 class="mt-2"><a style="text-decoration: none; color: black;" href="./các sản phẩm/sp16/index.html">Perfect care 2 combo 1 Enito nano repellent v2 285ml + 1 Enito Foam cleaner kit ... </a></h5>
+        <p>
+          <span class="price text-danger">980.000 Đ</span>
+        </p>
+      </div>
+      <div class="col-md-3">
+        <div class="item-image">  
+          <a href="#">
+            <a href="#" target="_blank"><img class="card-img " src="./Trang Chủ/anh/61ebbb0e53cd2_perfect-care-3-combo.png" alt=""></a>
+          </a>
+        </div>
+        <h5 class="mt-2"><a style="text-decoration: none; color: black;" href="./các sản phẩm/sp17/index.html">Perfect care 3 combo 1 Enito nano repellent v2 285ml + 1 Suede cleaner kit  ...</a></h5>
+        <p>
+          <span class="price text-danger">910.000 Đ</span>
+        </p>
+      </div>
+      <div class="col-md-3">
+        <div class="item-image">  
+          <a href="#">
+            <a href="#" target="_blank"><img class="card-img " src="./Trang Chủ/anh/61ebbf49b1805_easy-clean-1-combo-1-enito-total-cleaner-kit-1-enito-premium-brush.png" alt=""></a>
+          </a>
+        </div>
+        <h5 class="mt-2"><a style="text-decoration: none; color: black;" href="./các sản phẩm/sp18/index.html"> Easy clean 1 combo (1 Enito total cleaner kit + 1 Enito Premium Brush) </a></h5>
+        <p>
+          <span class="price text-danger">400.000 Đ</span>
+        </p>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-lg-3">
+      <hr class="w-100">
+    </div>
+    <div class="col-lg-6">
+      <h3 style="text-align: center;">COMBO</h3>
+    </div>
+    <div class="col-lg-3">
+      <hr class="w-100">
+    </div>
+  </div>
+  <div class="tab-pane container">
+    <div class="row mt-5">
+      <div class="col-md-3">
+        <div class="item-image">  
+          <a href="#">
+            <a href="./các sản phẩm/sp15/index.html " target="_blank"><img class="card-img " src="./Trang Chủ/anh/61ebbd83e3e62_perfect-care-1.png" alt=""></a>
+          </a>
+        </div>
+        <h5 class="mt-2"><a style="text-decoration: none; color: black;" href="./các sản phẩm/sp15/index.html">Perfect care 1 combo (1 Enito repellent v2 285ml + 1 Enito total cleaner kit + 1 Enito Premium) </a></h5>
+        <p>
+          <span class="price text-danger"> 930.000 Đ</span>
+        </p>
+      </div>
+      <div class="col-md-3">
+        <div class="item-image">  
+          <a href="#">
+            <a href="./các sản phẩm/sp16/index.html " target="_blank"><img class="card-img " src="./Trang Chủ/anh/61ebbcaa06475_perfect-care-2-combo.png" alt=""></a>
+          </a>
+        </div>
+        <h5 class="mt-2"><a style="text-decoration: none; color: black;" href="./các sản phẩm/sp16/index.html">Perfect care 2 combo (1 Enito nano repellent v2 285ml + 1 Enito Foam cleaner kit + 1 Enito standard) </a></h5>
+        <p>
+          <span class="price text-danger"> 980.000 Đ</span>
+        </p>
+      </div>
+      <div class="col-md-3">
+        <div class="item-image">  
+          <a href="#">
+            <a href="./các sản phẩm/sp17/index.html " target="_blank"><img class="card-img " src="./Trang Chủ/anh/61ebbb0e53cd2_perfect-care-3-combo.png" alt=""></a>
+          </a>
+        </div>
+        <h5 class="mt-2"><a style="text-decoration: none; color: black;" href="./các sản phẩm/sp17/index.html">Perfect care 3 combo (1 Enito nano repellent v2 285ml + 1 Suede cleaner kit  + 1 Enito standard)</a></h5>
+        <p>
+          <span class="price text-danger"> 910.000 Đ</span>
+        </p>
+      </div>
+      <div class="col-md-3">
+        <div class="item-image">  
+          <a href="#">
+            <a href="./các sản phẩm/sp18/index.html " target="_blank"><img class="card-img " src="./Trang Chủ/anh/61ebbf49b1805_easy-clean-1-combo-1-enito-total-cleaner-kit-1-enito-premium-brush.png" alt=""></a>
+          </a>
+        </div>
+        <h5 class="mt-2"><a style="text-decoration: none; color: black;" href="./các sản phẩm/sp18/index.html"> Easy clean 1 combo (1 Enito total cleaner kit + 1 Enito Premium Brush) </a></h5>
+        <p>
+          <span class="price text-danger"> 400.000 Đ</span>
+        </p>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div style="height: 100px;">
+
+</div>
+
+<!-- footter-->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>company</h4>
+        <ul>
+          <li><a href="#">Về chúng tôi</a></li>
+          <li><a href="#">Dịch vụ của chúng tôi</a></li>
+          <li><a href="#">Chính sách bảo mật</a></li>
+          <li><a href="#">Chương trình liên kết</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>get help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Giao hàng</a></li>
+          <li><a href="#">Hoàn trả</a></li>
+          <li><a href="#">Tình trạng đặt hàng</a></li>
+          <li><a href="#">Lựa chọn thanh toán</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>online shop</h4>
+        <ul>
+          <li><a href="#">Combo</a></li>
+          <li><a href="#">Lót giày</a></li>
+          <li><a href="#">Bình xịt</a></li>
+          <li><a href="#">Đế tăng chiều cao</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Theo dõi chúng tôi</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+  <script src="myJS/Modalpopup.js"></script>
+  <script src="myJS/Backtop.js"></script> 
+  <script src="myJS/Toggle.js"></script>
+  <script src="myJS/Sidebar.js"></script>
+  <script src="myJS/Cart.js"></script>
+</body>
+
+</html>

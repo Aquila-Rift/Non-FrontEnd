@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Thông tin đặt hàng</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="myCSS/Thongtindathang.css">
+  <link rel="stylesheet" href="myCSS/Trangchu.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+  
+<div class=".container-fluid">
+
+    <div id="wrapper">
+      <div id="header">
+        <nav class="container">
+          <a href="index.html" id="logo">
+            <h4>StylistLeather</h4>
+          </a>
+          <ul id="main-menu">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="">Dịch vụ</a>
+              <ul class="sub-menu">
+                <li><a href="Suachua.html">Phục hồi giày </a></li>
+                <li><a href="Vesinhgiay.html">Vệ sinh giày </a></li>
+                <li><a href="Customgiay.html">Custom giày </a></li>
+              </ul>
+            </li>
+            <li><a href="">Sản phẩm</a>
+              <ul class="sub-menu">
+                <li><a href="Chongogiay.html">Chống ố giày </a></li>
+                <li><a href="Sonchuyendung.html">Sơn cho giày </a></li>
+                <li><a href="Lotgiay.html">Lót giày </a></li>
+                <li><a href="Combo.html">Combo </a></li>
+              </ul>
+            </li>
+            <li><a href="">Blog giày</a>
+              <ul class="sub-menu">
+                <li><a href="Kinhnghiem.html">Kinh nghiệm </a></li>
+                <li><a href="Tintuc.html">Tin tức</a></li>
+                <li><a href="Xuhuong.html">Xu hướng </a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul id="main-menu">
+            <div class="box">
+              <input type="text" placeholder="Tìm kiếm dịch vụ - sản phẩm ...">
+              <a href="">
+                <i class="fas fa-search"></i>
+              </a>
+            </div>
+            <li><a onclick="togglePopup()"><ion-icon name="information-circle-outline" style="cursor:pointer;"></ion-icon></a></li>
+            <li><a id="btn-open"><ion-icon name="person-outline"></ion-icon></a></li>
+          </ul>
+        </nav>
+      </div>
+
+  <!-- modal popup -->
+  <div id="modal-container">
+    <div id="modal">
+        <div class="modal-header">
+            <h3>Tài khoản</h3>
+            <button id="btn-close"><i class="fas fa-times-circle"></i></i></button>
+        </div>
+        <div class="modal-body">
+          <p>Tài khoản của bạn</p>
+          <p>Khách hàng mới</p>
+          <div>
+            <a href="Dangnhap.html"><button>Đăng nhập</button></a>
+            <a href="Dangky.html"><button>Đăng ký</button></a>
+          </div>
+        </div>
+    </div> 
+  </div>
+  <!-- end modal -->
+
+      <!-- toggle popup -->
+    <div class="popup" id="popup-1">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="togglePopup()">&times;</div><br>
+        <a href="Thongtindathang.html" style="color: black;"><i class="bi bi-box-seam-fill"></i> Thông tin đặt hàng</a><br>
+        <a href="Thongtinvanchuyen.html" style="color: black;"><i class="bi bi-truck"></i> Thông tin vận chuyển</a><br>
+        <a href="Thongtinhoantra.html" style="color: black;"><i class="bi bi-arrow-counterclockwise"></i> Chính sách hoàn trả</a>
+      </div>
+    </div>
+    <!-- end toggle popup -->
+
+
+    <!-- button back-top -->
+    <div id="backtop">
+      <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <h1>Hướng dẫn mua hàng</h1>
+      <div class="return">
+        <h2 style="font-weight: bold;">HƯỚNG DẪN MUA HÀNG TẠI WEBSITE BAODUONGDODA.VN</h2><br>
+        <p><a href="" style="color: red; font-weight: bold;">1. Hướng dẫn mua hàng trên máy tính</a></p>
+        <ul>
+            <li>1. Bước 1: Chọn sản phẩm</li>
+            <li>2. Bước 2: Giỏ hàng</li>
+            <li>3. Bước 3: Thông tin giao hàng</li>
+            <li>4. Bước 4: Phương thức thanh toán</li>
+        </ul>
+        <p><a href="" style="color: red; font-weight: bold;">2. Hướng dẫn mua hàng trên Mobile</a></p>
+        <p><span style="font-weight:bold;">Lợi ích của Tài Khoản :</span></p>
+        <p>Bạn hoàn toàn không cần phải đăng nhập mà vẫn có thể mua hàng một cách dễ dàng, tuy nhiên chúng tôi khuyên bạn nên đăng ký tài khoản (chỉ tốn 1 phút và hoàn toàn miễn phí) và đăng nhập trước khi mua hàng, vì những lợi ích sau đây:</p>
+        <p>Đăng nhập mỗi lần mua hàng để được:</p>
+        <p>Lưu lại lịch sử mua hàng, thông tin giao hàng để tiết kiệm thời gian mỗi lần mua hàng sau đó.</p>
+        <p>Xem lại lịch sử đặt hàng, mua hàng, tra cứu, đối soát đơn hàng một cách dễ dàng.</p>
+        <li>Lưu sản phẩm yêu thích</li>
+        <li>Cộng dồn hóa đơn để nâng hạng tài khoản và được chiết khấu trực tiếp:</li>
+        <li>Member được chiết khấu 5% cho tất cả đơn hàng.</li>
+        <li>VIP được chiết khấu 7% cho tất cả đơn hàng.</li><br>
+        <p>Lưu ý: Không áp dụng cho sản phẩm đang khuyến mãi hoặc đang giảm giá cao hơn mức chiết khấu của tài khoản. </p>
+        
+        <p class="thanks">Chân thành cảm ơn quý khách đã ủng hộ<span style="font-weight:bold;"> Chúng tôi</span></p>
+        <h2>1. Hướng dẫn mua hàng trên giao diện máy tính</h2>
+        <p>Đầu tiên hãy truy cập website <a href="">baoduongdoda.vn</a></p>
+        <p><span style="font-weight:bold;">Bước 1: Chọn sản phẩm</span></p>
+        <p>Vào trang sản phẩm bạn muốn mua, click chọn biến thể nếu có (size, màu) => Sau đó bấm <a style="color: red; font-weight: bold;">"Thêm vào giỏ"</a></p>
+        <img src="Images/hướng dẫn mua hàng/1.png">
+        <p>Nếu muốn mua sản phẩm này: Hãy thêm vào giỏ hàng</p>
+        <p>Đang phân vân chưa biết mua hay không: Hãy thêm vào giỏ hàng, vì đây cũng là công cụ để bạn lưu lại sản phẩm đã xem, và tìm lại những sản phẩm đã xem một cách nhanh chóng.</p>
+        <p><span style="font-weight:bold;">Bước 2: Giỏ hàng</span></p>
+        <p>Sau khi đã thêm tất cả những sản phẩm mình muốn mua vào giỏ hàng, bạn click vào icon "Giỏ hàng" để xem lại tất cả sản phẩm một lần nữa.</p>
+        <img src="Images/hướng dẫn mua hàng/2.png" width="100%">
+        <img src="Images/hướng dẫn mua hàng/3.png" width="100%" >
+        <div text-align="center">
+          <i align-item="center">Giỏ hàng</i>
+        </div>
+        <p>- Tại bước này, bạn có thể "Bỏ chọn" những sản phẩm cần cân nhắc thêm.</p>
+        <p>- Những sản phẩm được tick chọn ở check-box sẽ hiển thị ở bước tiếp theo.</p>
+        <p>Khi đã chọn đủ sản phẩm muốn mua, click vào nút <a style="font-weight:bold;"> "Đặt hàng" </a> để chuyển qua bước tiếp theo.</p>
+        <p class="note">Lưu ý: Chi phí vận chuyển cho quá trình hoàn trả sẽ do khách hàng chịu.</p>
+        <p class="thanks">Chân thành cảm ơn quý khách đã ủng hộ<span style="font-weight:bold;"> Chúng tôi</span></p>
+    </div>
+
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>company</h4>
+              <ul>
+                <li><a href="#">Về chúng tôi</a></li>
+                <li><a href="#">Dịch vụ của chúng tôi</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
+                <li><a href="#">Chương trình liên kết</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>get help</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Giao hàng</a></li>
+                <li><a href="#">Hoàn trả</a></li>
+                <li><a href="#">Tình trạng đặt hàng</a></li>
+                <li><a href="#">Lựa chọn thanh toán</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>online shop</h4>
+              <ul>
+                <li><a href="#">Combo</a></li>
+                <li><a href="#">Lót giày</a></li>
+                <li><a href="#">Bình xịt</a></li>
+                <li><a href="#">Đế tăng chiều cao</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Theo dõi chúng tôi</h4>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+      </div>
+      
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+          integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+          integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+      
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+      
+        <script src="myJS/Modalpopup.js"></script>
+        <script src="myJS/Backtop.js"></script> 
+        <script src="myJS/Toggle.js"></script>
+      </body>
+      </html>

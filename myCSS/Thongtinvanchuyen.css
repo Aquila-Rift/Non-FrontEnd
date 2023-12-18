@@ -1,0 +1,45 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.return {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+    margin-bottom: 150px;
+}
+h1 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+}
+h2 {
+    color: #333;
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+p, ul, ol {
+    margin-bottom: 15px;
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+
+.note {
+    color: #888;
+    font-style: italic;
+}
+.thanks {
+    font-style: italic;
+    text-align: center;
+}

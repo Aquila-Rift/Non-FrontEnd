@@ -1,0 +1,63 @@
+#adjust-Pwithcheck{
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 7px;
+    opacity: 0.8px;
+    margin-bottom: 36px;
+}
+#adjust-title{
+    margin-top: 40px;
+}
+#input-login{
+    width: 300px;
+    opacity: 0.5px;
+    margin-bottom:20px ;
+}
+#adjust-P{
+    margin-bottom: 5px;
+}
+#adjust-strong{
+    font-size: 13px;
+    margin-left: 80px; 
+    cursor: pointer;
+}
+#button-decorate{
+    text-align: center;
+    background: #FFCA28;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+#button-decorate:hover, button:focus, .btn:active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* Đổi mật khẩu */
+#check{
+    display: none;
+}
+.content{
+    display: none;
+    transition: 0.5s linear;
+}
+label{
+    color: #4285F4;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 65px;
+    font-size: 15px;
+}
+#check:checked ~ .content{
+    display: block;
+}
+#check:checked ~ label{
+    display: none;
+}

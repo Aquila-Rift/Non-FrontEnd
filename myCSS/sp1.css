@@ -1,0 +1,120 @@
+@media (max-width: 768px) {
+    /* Áp dụng kiểu CSS cho màn hình có chiều rộng tối đa là 768px */
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Áp dụng kiểu CSS cho màn hình có chiều rộng tối đa là 480px */
+    body {
+      font-size: 12px;
+    }
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  a{
+    text-decoration: none;
+    color:black;
+  }
+  .ul li a{
+    text-decoration: none;
+    color: gray;
+}
+.ul1 li a{
+    text-decoration: none;
+    color: gray;
+}
+.ul2 li a{
+    text-decoration: none;
+    color: gray;
+}
+a{
+    text-decoration: none;
+}
+img{
+    object-fit: cover;
+}
+.ul li a:hover{
+    text-decoration: underline;
+    color: white;
+}
+.ul1 li a:hover{
+    text-decoration: underline;
+    color: white;
+}
+.ul2 li a:hover{
+    text-decoration: underline;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+img{
+    object-fit: cover;
+}
+
+
+.gh{
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #FF9900;
+}
+.gh:active{
+  background-color: gray;
+  color: white;
+}
+.space {
+  display: flex;
+  justify-content: center;
+}
+
+#message-save{
+  background-color: rgb(255, 177, 177);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  width: 190px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  position: fixed;
+  bottom: 50px;
+  z-index: 1;
+  visibility: hidden;
+}
+#message-save.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.4s, fadeout 0.5s 1.5s;
+  animation: fadein 0.4s, fadeout 0.5s 1.5s;
+}
+
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 50px;
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    bottom: 50px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+

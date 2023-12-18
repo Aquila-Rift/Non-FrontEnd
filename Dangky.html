@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Đăng ký</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="myCSS/Dangky.css">
+  <link rel="stylesheet" href="myCSS/Trangchu.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <main>
+    <div id="wrapper">
+      <div id="header">
+        <nav class=".container-fluid">
+          <a href="index.html" id="logo">
+            <h4>StylistLeather</h4>
+          </a>
+          <ul id="main-menu">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="">Dịch vụ</a>
+              <ul class="sub-menu">
+                <li><a href="Suachua.html">Phục hồi giày </a></li>
+                <li><a href="Customgiay.html">Custom giày </a></li>
+              </ul>
+            </li>
+            <li><a href="">Sản phẩm</a>
+              <ul class="sub-menu">
+                <li><a href="Chongogiay.html">Chống ố giày </a></li>
+                <li><a href="Sonchuyendung.html">Sơn cho giày </a></li>
+                <li><a href="Sanphamvsgiay.html">Bộ vệ sinh giày </a></li>
+                <li><a href="Lotgiay.html">Lót giày </a></li>
+                <li><a href="Combo.html">Combo </a></li>
+              </ul>
+            </li>
+            <li><a href="">Blog giày</a>
+              <ul class="sub-menu">
+                <li><a href="Kinhnghiem.html">Kinh nghiệm </a></li>
+                <li><a href="Tintuc.html">Tin tức</a></li>
+                <li><a href="Xuhuong.html">Xu hướng </a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul id="main-menu">
+            <div class="box">
+              <input type="text" placeholder="Tìm kiếm dịch vụ - sản phẩm ...">
+              <a href="">
+                <i class="fas fa-search"></i>
+              </a>
+            </div>
+            <li><a onclick="togglePopup()"><ion-icon name="information-circle-outline" style="cursor:pointer;"></ion-icon></a></li>
+            <li><a id="btn-open"><ion-icon name="person-outline"></ion-icon></a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- modal popup -->
+      <div id="modal-container">
+        <div id="modal">
+            <div class="modal-header">
+                <h3>Tài khoản</h3>
+                <button id="btn-close"><i class="fa-solid
+                fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+              <p>Tài khoản của bạn</p>
+              <p>Khách hàng mới ?</p>
+              <div>
+                <a href="Dangnhap.html"><button>Đăng nhập</button></a>
+                <a href="Dangky.html"><button>Đăng ký</button></a>
+              </div>
+            </div>
+        </div> 
+      </div>
+      <!-- end modal -->
+
+      <!-- toggle popup -->
+      <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup()">&times;</div><br>
+          <a href="Thongtindathang.html" style="color: black;"><i class="bi bi-box-seam-fill"></i> Thông tin đặt hàng</a><br>
+          <a href="Thongtinvanchuyen.html" style="color: black;"><i class="bi bi-truck"></i> Thông tin vận chuyển</a><br>
+          <a href="Thongtinhoantra.html" style="color: black;"><i class="bi bi-arrow-counterclockwise"></i> Chính sách hoàn trả</a>
+        </div>
+      </div>
+      <!-- end toggle popup -->
+
+
+    </div>
+
+      
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-7">
+          <p>Tài khoản > Đăng ký</p>
+          <h5 style="margin-bottom: -8px;">Đăng ký</h5><br>
+          <form><b style="font-size: 14px;">Giới tính</b><br>
+            <input type="checkbox" name="Selection" id="check"> Namㅤㅤ
+            <input type="checkbox" name="Selection" id="check"> Nữ
+          </form><br>
+          <b style="font-size: 14px;">Tên</b><br>
+          <div style="display: inline;
+                      opacity: 0.7;">
+            <input type="text" name="Last name" placeholder="Họ" style="width: 140px; height:40px ;">
+            <input type="text" name="Prefix" placeholder="Tên đệm" style="width: 110px ; height:40px">
+            <input type="text" name="First name" placeholder="Tên" style="width: 140px; height:40px"><br>
+          </div><br>
+          <b style="font-size: 14px;">Ngày sinh</b><br>
+          <div style="display: inline;
+                      opacity: 0.7;">
+            <input type="number" name="Day" placeholder="Ngày" style="width: 140px; height:40px ;">
+            <input type="number" name="Month" placeholder="Tháng" style="width: 140px ; height:40px">
+            <input type="number" name="Year" placeholder="Năm" style="width: 110px; height:40px"><br>
+          </div><br>
+          <b style="font-size: 14px;">Số điện thoại</b><br>
+          <div style="display: inline;
+                      opacity: 0.7;">
+            <input type="text" name="Phone number" placeholder="+84 " style="width: 400px; height:40px ;"><br>
+          </div><br>  
+          <b style="font-size: 14px;">Mật khẩu</b><br>
+
+          <form action="/login" method="POST" id="login-form">
+            <div class="password-container">
+              <input type="password" id="password"
+              name="password" placeholder="Mật khẩu ...">
+              <i class="fa-solid fa-eye"
+              id="show-password"></i>
+            </div>
+          </form><br>
+
+            <input type="checkbox" name="Selection" id="check"> Tôi đồng ý với <a href="">Điều khoản & Điều kiện.</a><br>
+            <a href="Dangnhap.html"><button id="button-decorate" style="width: 50px;">Lưu</button></a>
+        </div>
+        <div class="col-sm-5">
+          <h5 id="adjust-title">Lợi ích của tài khoản :</h5>
+          <div id="adjust-Pwithcheck">
+              <p><i class="fa-solid fa-check" style="color: #4AB786;"></i> Tất cả thông tin đặt hàng của bạn an toàn ở một nơi</p>
+              <p><i class="fa-solid fa-check" style="color: #4AB786;"></i> Quy trình đặt hàng nhanh chóng và dễ dàng</p>
+              <p><i class="fa-solid fa-check" style="color: #4AB786;"></i> Thêm sản phẩm vào giỏ hàng của bạn</p>
+          </div>
+      </div>
+      </div>
+    </div>
+  </main>
+
+  <div style="height: 50px;"></div>
+
+  <footer>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+  </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <script src="myJS/Modalpopup.js"></script>
+    <script src="myJS/Hiddenpassword.js"></script>
+    <script src="myJS/Toggle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>ComBo</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="myCSS/sp4.css">
+  <link rel="stylesheet" href="myCSS/Trangchu.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+    <header>
+      <nav class="container">
+        <a href="index.html" id="logo">
+          <h4>StylistLeather</h4>
+        </a>
+        <ul id="main-menu">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="">Dịch vụ</a>
+            <ul class="sub-menu">
+              <li><a href="Suachua.html">Phục hồi giày </a></li>
+              <li><a href="Customgiay.html">Custom giày </a></li>
+            </ul>
+          </li>
+          <li><a href="">Sản phẩm</a>
+            <ul class="sub-menu">
+              <li><a href="Chongogiay.html">Chống ố giày </a></li>
+              <li><a href="Sonchuyendung.html">Sơn cho giày </a></li>
+              <li><a href="Sanphamvsgiay.html">Bộ vệ sinh giày </a></li>
+              <li><a href="Lotgiay.html">Lót giày </a></li>
+              <li><a href="Combo.html">Combo </a></li>
+            </ul>
+          </li>
+          <li><a href="">Blog giày</a>
+            <ul class="sub-menu">
+              <li><a href="Kinhnghiem.html">Kinh nghiệm </a></li>
+              <li><a href="Tintuc.html">Tin tức</a></li>
+              <li><a href="Xuhuong.html">Xu hướng </a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul id="main-menu">
+          <div class="box">
+            <input type="text" placeholder="Tìm kiếm dịch vụ - sản phẩm ...">
+            <a href="">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+          <li><a onclick="togglePopup()"><ion-icon name="information-circle-outline" style="cursor:pointer;"></ion-icon></a></li>
+          <li><a id="button-open"><ion-icon name="cart-outline" style="cursor:pointer;"></ion-icon></a></li>
+          <!-- Sidebar -->
+            <div id="sidebar">
+                <a id="button-close"><i class="fas fa-times-circle"></i> </a> 
+                <h5 style="display: flex; justify-content: center; align-items: center; margin-top: 20px; color: w;">Giỏ hàng</h5>
+                <hr style="width: 100%;">
+                <div id="total-section">
+                  <p id="total-price">Tổng: 0 VNĐ</p>
+                  <button id="checkout-btn">Thanh toán</button>
+                </div>
+            </div>
+          <li><a id="btn-open"><ion-icon name="person-outline"></ion-icon></a></li>
+        </ul>
+      </nav>
+    </header>
+
+  
+  <!-- modal popup -->
+  <div id="modal-container">
+    <div id="modal">
+        <div class="modal-header">
+            <h3>Tài khoản</h3>
+            <button id="btn-close"><i class="fas fa-times-circle"></i></i></button>
+        </div>
+        <div class="modal-body">
+          <p>Tài khoản của bạn</p>
+          <p>Khách hàng mới ?</p>
+          <div>
+            <a href="Dangnhap.html"><button>Đăng nhập</button></a>
+            <a href="Dangky.html"><button>Đăng ký</button></a>
+          </div>
+        </div>
+    </div> 
+  </div>
+  <!-- end modal -->
+
+    <!-- toggle popup -->
+    <div class="popup" id="popup-1">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="togglePopup()">&times;</div><br>
+        <a href="Thongtindathang.html" style="color: black;"><i class="bi bi-box-seam-fill"></i> Thông tin đặt hàng</a><br>
+        <a href="Thongtinvanchuyen.html" style="color: black;"><i class="bi bi-truck"></i> Thông tin vận chuyển</a><br>
+        <a href="Thongtinhoantra.html" style="color: black;"><i class="bi bi-arrow-counterclockwise"></i> Chính sách hoàn trả</a>
+      </div>
+    </div>
+    <!-- end toggle popup -->
+
+</div>
+
+<main>
+
+  <!-- button back-top -->
+<div id="backtop">
+  <i class="fas fa-chevron-up"></i>
+</div>
+
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-lg-5">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          </div>
+
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="các sản phẩm/anh/649902e14c9e6_bo-san-pham-ve-sinh-giay-tien-dung-crep-protect-starter-pack (1).png"
+                alt="Los Angeles" class="d-block w-100">
+            </div>
+          </div>
+
+          <!-- Left and right controls/icons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <h3><b>Bộ sản phẩm vệ sinh giày tiện dụng Crep Protect Starter Pack</b></h3>
+        <hr class="w-100 mb-3">
+        <h2 style="color: red;"><b>660.000 Đ</b></h2>
+        <p><b>Thương Hiệu: </b> Crep Protect</p>
+        <p><b>xuất xứ: </b> Anh</p>
+        <p><b>Chất liệu: </b> Dung Dịch</p>
+        <p><b>Kiểu Dáng: </b> Bộ Sản Phẩm</p>
+        <p><b>Màu sắc: </b><button class="btn btn-dark">Đen</button> <button class="btn btn-warning">Cam</button></p>
+
+        <p><b>Kích Thước: </b> <button class="btn btn-dark">Free Size</button> </p>
+        <hr class="w-100">
+        <button class="cart-button"> <i class="bi bi-cart3"></i> Cho Vào Giỏ Hàng</button>
+      </div>
+    </div>
+    <div class="row">
+      <h3 class="btn btn-dark mt-5 w-25" style="margin-left: 10px;"><b>Thông Tin Sản Phẩm</b></h3>
+      <hr class="w-100">
+      <p>Bộ sản phẩm vệ sinh giày tiện dụng Crep Protect Starter Pack chứa các vật dụng thiết yếu phù hợp để bạn mang đi
+        du lịch được đóng gói trong một chiếc túi bền để sử dụng khi di chuyển. Mang đến khả năng làm sạch và bảo vệ
+        giày thể thao mạnh mẽ trong các sản phẩm cỡ nhỏ mới. Mọi thứ bạn cần để chăm sóc giày dép khi đi du lịch.</p>
+      <p>Bộ sản phẩm bao gồm:</p>
+      <p>6 gói khăn lau giày chuyên dụng Crep Protect Wipes</p>
+      <p>1 bình xịt nano chống nước và bám bẩn mini Crep Protect Spray 50ml</p>
+      <p>1 chai vệ sinh giày dạng tạo bọt tiện dụng Crep Protect Foam 50ml1 chai vệ sinh giày dạng tạo bọt tiện dụng Crep Protect Foam 50ml</p>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+<!-- footter-->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>company</h4>
+        <ul>
+          <li><a href="#">Về chúng tôi</a></li>
+          <li><a href="#">Dịch vụ của chúng tôi</a></li>
+          <li><a href="#">Chính sách bảo mật</a></li>
+          <li><a href="#">Chương trình liên kết</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>get help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Giao hàng</a></li>
+          <li><a href="#">Hoàn trả</a></li>
+          <li><a href="#">Tình trạng đặt hàng</a></li>
+          <li><a href="#">Lựa chọn thanh toán</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>online shop</h4>
+        <ul>
+          <li><a href="#">Combo</a></li>
+          <li><a href="#">Lót giày</a></li>
+          <li><a href="#">Bình xịt</a></li>
+          <li><a href="#">Đế tăng chiều cao</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Theo dõi chúng tôi</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+  <script src="myJS/Modalpopup.js"></script>
+  <script src="myJS/Backtop.js"></script> 
+  <script src="myJS/Toggle.js"></script>
+  <script src="myJS/Sidebar.js"></script>
+  <script src="myJS/Cart.js"></script>
+</body>
+
+</html>

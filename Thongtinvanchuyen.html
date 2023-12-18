@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Thông tin vận chuyển</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="myCSS/Thongtinvanchuyen.css">
+  <link rel="stylesheet" href="myCSS/Trangchu.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+<div class=".container-fluid">
+
+    <div id="wrapper">
+      <div id="header">
+        <nav class="container">
+          <a href="index.html" id="logo">
+            <h4>StylistLeather</h4>
+          </a>
+          <ul id="main-menu">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="">Dịch vụ</a>
+              <ul class="sub-menu">
+                <li><a href="Suachua.html">Phục hồi giày </a></li>
+                <li><a href="Vesinhgiay.html">Vệ sinh giày </a></li>
+                <li><a href="Customgiay.html">Custom giày </a></li>
+              </ul>
+            </li>
+            <li><a href="">Sản phẩm</a>
+              <ul class="sub-menu">
+                <li><a href="Chongogiay.html">Chống ố giày </a></li>
+                <li><a href="Sonchuyendung.html">Sơn cho giày </a></li>
+                <li><a href="Lotgiay.html">Lót giày </a></li>
+                <li><a href="Combo.html">Combo </a></li>
+              </ul>
+            </li>
+            <li><a href="">Blog giày</a>
+              <ul class="sub-menu">
+                <li><a href="Kinhnghiem.html">Kinh nghiệm </a></li>
+                <li><a href="Tintuc.html">Tin tức</a></li>
+                <li><a href="Xuhuong.html">Xu hướng </a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul id="main-menu">
+            <div class="box">
+              <input type="text" placeholder="Tìm kiếm dịch vụ - sản phẩm ...">
+              <a href="">
+                <i class="fas fa-search"></i>
+              </a>
+            </div>
+            <li><a onclick="togglePopup()"><ion-icon name="information-circle-outline" style="cursor:pointer;"></ion-icon></a></li>
+            <li><a id="btn-open"><ion-icon name="person-outline"></ion-icon></a></li>
+          </ul>
+        </nav>
+      </div>
+
+  <!-- modal popup -->
+  <div id="modal-container">
+    <div id="modal">
+        <div class="modal-header">
+            <h3>Tài khoản</h3>
+            <button id="btn-close"><i class="fas fa-times-circle"></i></button>
+        </div>
+        <div class="modal-body">
+          <p>Tài khoản của bạn</p>
+          <p>Khách hàng mới</p>
+          <div>
+            <a href="Dangnhap.html"><button>Đăng nhập</button></a>
+            <a href="Dangky.html"><button>Đăng ký</button></a>
+          </div>
+        </div>
+    </div> 
+  </div>
+  <!-- end modal -->
+
+       <!-- toggle popup -->
+    <div class="popup" id="popup-1">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="togglePopup()">&times;</div><br>
+        <a href="Thongtindathang.html" style="color: black;"><i class="bi bi-box-seam-fill"></i> Thông tin đặt hàng</a><br>
+        <a href="Thongtinvanchuyen.html" style="color: black;"><i class="bi bi-truck"></i> Thông tin vận chuyển</a><br>
+        <a href="Thongtinhoantra.html" style="color: black;"><i class="bi bi-arrow-counterclockwise"></i> Chính sách hoàn trả</a>
+      </div>
+    </div>
+    <!-- end toggle popup -->
+
+    <!-- button back-top -->
+    <div id="backtop">
+      <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <h1>Chính sách giao hàng</h1>
+      <div class="return">
+         <p>Hiện tại chúng tôi có hai phương thức giao hàng sau đây:</p>
+        <ul>
+            <p><span style="font-weight:bold;">1. Nhân viên tại cửa hàng sẽ trực tiếp giao hàng cho khách (sau đây gọi là giao hàng nội bộ):</span></p>
+        </ul>
+        <p><span style="font-weight:bold;">Đối với các cửa hàng tại Quảng Ninh</span></p>
+        <p>Khách hàng có tài khoản member và VIP tại đây sẽ được <span style="font-weight:bold;">freeship tất cả các giá trị đơn hàng sử dụng giao hàng nội bộ.</span></p>
+        <li>Giao hàng nội bộ sẽ được sử dụng giao các đơn hàng đến các khu vực trong nội thành, cụ thể như sau:</li>
+        <li>Các cửa hàng tại Quảng Ninh: Áp dụng giao hàng nội bộ cho ​Huyện Ba Chẽ, ​Huyện Bình Liêu, ​Huyện Cô Tô,​ Huyện Đầm Hà, ​Huyện Hải Hà, ​Huyện Vân Đồn, ​Huyện Tiên Yên, ​Thành phố Hạ Long, ​Thành phố Cẩm Phả, ​Thành phố Móng Cái, ​Thành phố Uông Bí, ​Thị xã Quảng Yên, ​Thị xã Đông Triều</li>
+        <ul>
+            <li>Bán kính 5km xung quanh cửa hàng theo đường chim bay (sử dụng Google map để đo) hoặc hơn 5km nếu ở những khu vực dễ đi.</li>
+            <li>Thời gian nhân viên đi giao hàng theo diện giao hàng nội bộ là từ 13h – 16h hàng ngày. Do đó, những đơn hàng được nhận trước 13h FanFan sẽ giao trong ngày, những đơn sau 13h sẽ được giao vào ngày hôm sau. Đơn hàng kể từ khi tiếp nhận sẽ được giao trong vòng (24+4)h.</li>
+        </ul>
+        <p><span style="font-weight:bold;">Cách tính phí ship đối với đơn hàng sử dụng giao hàng nội bộ (áp dụng với chi nhánh tại Quảng Ninh):</span> </p>
+            <li>Đơn hàng dưới 500.000đ: 20.000đ</li>
+            <li>Đơn hàng từ 500.000đ – dưới 1.000.000đ: 10.000đ</li>
+            <li>Đơn hàng từ 1.000.000đ trở lên: freeship</li>
+            <li>Khách hàng có tài khoản member và VIP tại FanFan sẽ được freeship tất cả các giá trị đơn hàng sử dụng giao hàng nội bộ.</li>
+        <ul>
+            <p><span style="font-weight:bold;">2. Hàng được giao bằng dịch vụ giao hàng của bên thứ 3:</span></p>
+        </ul>
+        <p>Các bên giao hàng thứ 3 có thể sử dụng là:</p>
+            <li>Giao Hàng Tiết Kiệm (GHTK)</li>
+            <li>Viettel Post</li>
+            <li>Giao Hàng Nhanh</li>
+            <li>Gửi nhà xe</li>
+            <li>...</li>
+        <p><span style="font-weight:bold;">Đối với Khách hàng muốn thanh toán COD:</span></p>
+        <p>Sau khi Khách hàng đặt đơn hàng (Trên website baoduonggiay.vn, qua Fanpage hoặc trực tiếp qua điện thoại), nhân viên bán hàng của chúng tôi sẽ gọi điện thông báo cước ship cho khách hàng và tổng số tiền khách cần phải thanh toán khi nhận hàng</p>
+        <p>Vì không có dịch vụ xem hàng trước khi thanh toán do đó khi Bên thứ 3 giao hàng, Khách hàng vui lòng nhận hàng và thanh toán tiền cho bưu tá, sau khi kiểm tra hàng hóa (Vui lòng quay Video khi mở hàng và kiểm tra hàng) nếu có phát sinh vấn đề đổi trả hoặc lỗi sản phẩm, Khách hàng cần báo cho chúng tôi trong vòng 2 ngày, chúng tôi sẽ hỗ trợ đổi trả, bảo hành cho Quý khách.</p>
+        <li>Thời gian khách nhận được hàng khi giao bằng Bên thứ 3 là từ 2 – 5 ngày: Thời gian phục thuộc vào địa chỉ cụ thể và trạng thái hoạt động của bên thứ 3.</li>
+        <li>Khách hàng có thể yêu cầu nhân viên nhắn mã vận đơn để có thể chủ động tracking tình trạng đơn hàng của mình đang được giao.</li>
+        <p class="thanks">Chân thành cảm ơn quý khách đã ủng hộ<span style="font-weight:bold;"> Chúng tôi</span></p>
+
+    </div>
+
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>company</h4>
+              <ul>
+                <li><a href="#">Về chúng tôi</a></li>
+                <li><a href="#">Dịch vụ của chúng tôi</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
+                <li><a href="#">Chương trình liên kết</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>get help</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Giao hàng</a></li>
+                <li><a href="#">Hoàn trả</a></li>
+                <li><a href="#">Tình trạng đặt hàng</a></li>
+                <li><a href="#">Lựa chọn thanh toán</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>online shop</h4>
+              <ul>
+                <li><a href="#">Combo</a></li>
+                <li><a href="#">Lót giày</a></li>
+                <li><a href="#">Bình xịt</a></li>
+                <li><a href="#">Đế tăng chiều cao</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Theo dõi chúng tôi</h4>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+      </div>
+      
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+          integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+          integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+      
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+      
+        <script src="myJS/Modalpopup.js"></script>
+        <script src="myJS/Backtop.js"></script> 
+        <script src="myJS/Toggle.js"></script>
+      </body>
+      </html>

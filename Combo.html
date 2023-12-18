@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>ComBo</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="myCSS/Combo.css">
+    <link rel="stylesheet" href="myCSS/Trangchu.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- navbar -->
+<div id="wrapper">
+  <div id="header">
+    <nav class="container">
+      <a href="index.html" id="logo">
+        <h4>StylistLeather</h4>
+      </a>
+      <ul id="main-menu">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="">Dịch vụ</a>
+          <ul class="sub-menu">
+            <li><a href="Suachua.html">Phục hồi giày </a></li>
+            <li><a href="Customgiay.html">Custom giày </a></li>
+          </ul>
+        </li>
+        <li><a href="">Sản phẩm</a>
+          <ul class="sub-menu">
+            <li><a href="Chongogiay.html">Chống ố giày </a></li>
+            <li><a href="Sonchuyendung.html">Sơn cho giày </a></li>
+            <li><a href="Sanphamvsgiay.html">Bộ vệ sinh giày </a></li>
+            <li><a href="Lotgiay.html">Lót giày </a></li>
+            <li><a href="Combo.html">Combo </a></li>
+          </ul>
+        </li>
+        <li><a href="">Blog giày</a>
+          <ul class="sub-menu">
+            <li><a href="Kinhnghiem.html">Kinh nghiệm </a></li>
+            <li><a href="Tintuc.html">Tin tức</a></li>
+            <li><a href="Xuhuong.html">Xu hướng </a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul id="main-menu">
+        <div class="box">
+          <input type="text" placeholder="Tìm kiếm dịch vụ - sản phẩm ...">
+          <a href="">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
+        <li><a onclick="togglePopup()"><ion-icon name="information-circle-outline" style="cursor:pointer;"></ion-icon></a></li>
+        <li><a id="button-open"><ion-icon name="cart-outline" style="cursor:pointer;"></ion-icon></a></li>
+        <!-- Sidebar -->
+          <div id="sidebar">
+              <a id="button-close"><i class="fas fa-times-circle"></i> </a> 
+              <h5 style="display: flex; justify-content: center; align-items: center; margin-top: 20px; color: w;">Giỏ hàng</h5>
+              <hr style="width: 100%;">
+              <div id="total-section">
+                <p id="total-price">Tổng: 0 VNĐ</p>
+                <button id="checkout-btn">Thanh toán</button>
+              </div>
+          </div>
+        <li><a id="btn-open"><ion-icon name="person-outline"></ion-icon></a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- modal popup -->
+  <div id="modal-container">
+    <div id="modal">
+        <div class="modal-header">
+            <h3>Tài khoản</h3>
+            <button id="btn-close"><i class="fas fa-times-circle"></i></button>
+        </div>
+        <div class="modal-body">
+          <p>Tài khoản của bạn</p>
+          <p>Khách hàng mới ?</p>
+          <div>
+            <a href="Dangnhap.html"><button>Đăng nhập</button></a>
+            <a href="Dangky.html"><button>Đăng ký</button></a>
+          </div>
+        </div>
+    </div> 
+  </div>
+  <!-- end modal -->
+
+          <!-- toggle popup -->
+          <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+              <div class="close-btn" onclick="togglePopup()">&times;</div><br>
+              <a href="Thongtindathang.html" style="color: black;"><i class="bi bi-box-seam-fill"></i> Thông tin đặt hàng</a><br>
+              <a href="Thongtinvanchuyen.html" style="color: black;"><i class="bi bi-truck"></i> Thông tin vận chuyển</a><br>
+              <a href="Thongtinhoantra.html" style="color: black;"><i class="bi bi-arrow-counterclockwise"></i> Chính sách hoàn trả</a>
+            </div>
+          </div>
+          <!-- end toggle popup -->
+
+</div>
+        <div class="row">
+            <div style="margin-left: 150px; margin-right:-80px;" class="col-md-3 mt-5">
+                <ul class="list-group">
+                    <li class="list-group-item w-75">
+                        <h3>Danh Mục</h3>
+                        <hr style="width: 150px; height: 10px ; color: red;">
+                        <a href="Suachua.html">Sữa chữa phục hồi giày</a><br><br>
+                        <a href="Customgiay.html">Custom Giày</a><br><br>
+                        <a href="Chongogiay.html">Chống ố, làm trắng giày</a><br><br>
+                        <a href="Sonchuyendung.html">Sơn Chuyên dụng cho giày</a><br><br>
+                        <a href="Sanphamvsgiay.html">Vệ Sinh Giày</a><br><br>
+                        <a href="Lotgiay.html">Lót giày</a><br><br>
+                        <a href="Combo.html">Combo</a><br><br>
+                        <a href="Kinhnghiem.html">Kinh nghiệm</a><br><br>
+                        <a href="Tintuc.html">Tin tức</a><br><br>
+                        <a href="Xuhuong.html">Xu hướng</a><br><br>
+                    </li>
+                </ul>
+                <ul class="list-group w-75 mt-5">
+                    <li class="list-group-item bg-black">
+                        <h5 style=" text-align: center; color:white; font-weight: bold; font-family:'Segoe UI';">Hỗ
+                            Trợ Trực Tuyến</h5>
+                    </li>
+                    <li class="list-group-item">
+                        <h6 class="mt-3" style="text-align: center; ">Hỗ Trợ Tư Vấn</h6>
+                        <p style="text-align: center; color: #CC0000; font-weight: bold; font-family:GiLL Sans; ">
+                            0772377957</p>
+                    </li>
+                    <li class="list-group-item bg-black"></li>
+                </ul>
+            </div>
+            <div class="col-md-7 mt-5">
+                <h3>Combo</h3>
+                <hr style="width: 100%; height: 10px; color:gray;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                        <div class="card-body">
+                          <img class="card-img" src="../../Sản Phẩm/anh/61ebbf49b1805_easy-clean-1-combo-1-enito-total-cleaner-kit-1-enito-premium-brush.png" alt="">
+                            <h6> bộ sản phẩm vệ sinh giày Enito foam cleaner kit</h6>
+                            <p class="card-text mt-3 text-danger">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;420.000 Đ</p>
+                            <button class="cart-button"><i class="fa fa-shopping-cart"> Thêm giỏ hàng</i></button>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                        <div class="card-body">
+                          <img class="card-img" src="../../Sản Phẩm/anh/61ebbb0e53cd2_perfect-care-3-combo.png" alt="">
+                            <h6> bộ sản phẩm vệ sinh giày tối thượng Enito ultimate sneaker ...</h6>
+                            <p class="card-text mt-3 text-danger">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;590.000 Đ</p>
+                            <button class="cart-button"><i class="fa fa-shopping-cart"> Thêm giỏ hàng</i></button>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                        <div class="card-body">
+                          <img class="card-img" src="../../Sản Phẩm/anh/61ebbcaa06475_perfect-care-2-combo.png" alt="">
+                            <h6> bộ sản phẩm vệ sinh giày crep protect cure kit</h6>
+                            <p class="card-text mt-3 text-danger">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;520.000 Đ</p>
+                            <button class="cart-button"><i class="fa fa-shopping-cart"> Thêm giỏ hàng</i></button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-4">
+                        <div class="card">
+                        <div class="card-body">
+                          <img class="card-img" src="../../Sản Phẩm/anh/61ebbd83e3e62_perfect-care-1.png" alt="">
+                            <h6> bộ sản phẩm vệ sinh giày tiện dụng crep protect starter pack</h6>
+                            <p class="card-text mt-3 text-danger">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;660.000 Đ</p>
+                            <button class="cart-button"><i class="fa fa-shopping-cart"> Thêm giỏ hàng</i></button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <br>
+                <br>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- button back-top -->
+    <div id="backtop">
+      <i class="fas fa-chevron-up"></i>
+    </div>
+
+
+
+
+<!-- footter-->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>company</h4>
+        <ul>
+          <li><a href="#">Về chúng tôi</a></li>
+          <li><a href="#">Dịch vụ của chúng tôi</a></li>
+          <li><a href="#">Chính sách bảo mật</a></li>
+          <li><a href="#">Chương trình liên kết</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>get help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Giao hàng</a></li>
+          <li><a href="#">Hoàn trả</a></li>
+          <li><a href="#">Tình trạng đặt hàng</a></li>
+          <li><a href="#">Lựa chọn thanh toán</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>online shop</h4>
+        <ul>
+          <li><a href="#">Combo</a></li>
+          <li><a href="#">Lót giày</a></li>
+          <li><a href="#">Bình xịt</a></li>
+          <li><a href="#">Đế tăng chiều cao</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Theo dõi chúng tôi</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+  <script src="myJS/Modalpopup.js"></script>
+  <script src="myJS/Backtop.js"></script> 
+  <script src="myJS/Toggle.js"></script>
+  <script src="myJS/Sidebar.js"></script>
+  <script src="myJS/Cart.js"></script>
+</body>
+
+</html>

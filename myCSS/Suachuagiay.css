@@ -1,0 +1,92 @@
+@media (max-width: 768px) {
+    /* Áp dụng kiểu CSS cho màn hình có chiều rộng tối đa là 768px */
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Áp dụng kiểu CSS cho màn hình có chiều rộng tối đa là 480px */
+    body {
+      font-size: 12px;
+    }
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  a{
+    text-decoration: none;
+    color:black;
+  }
+  .ul li a{
+    text-decoration: none;
+    color: gray;
+}
+.ul1 li a{
+    text-decoration: none;
+    color: gray;
+}
+.ul2 li a{
+    text-decoration: none;
+    color: gray;
+}
+a{
+    text-decoration: none;
+}
+img{
+    object-fit: cover;
+}
+.ul li a:hover{
+    text-decoration: underline;
+    color: white;
+}
+.ul1 li a:hover{
+    text-decoration: underline;
+    color: white;
+}
+.ul2 li a:hover{
+    text-decoration: underline;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+img{
+    object-fit: cover;
+}
+.container1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .card-img {
+    border-radius: 5px;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+  }
+  .p1{
+    position: absolute;
+    top: 80px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px black;
+  }
+  .but{
+    position: absolute;
+    top: 150px;
+    width: 60%;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+  }

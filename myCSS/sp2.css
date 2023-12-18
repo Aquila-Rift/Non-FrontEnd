@@ -1,0 +1,81 @@
+@media (max-width: 768px) {
+    /* Áp dụng kiểu CSS cho màn hình có chiều rộng tối đa là 768px */
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Áp dụng kiểu CSS cho màn hình có chiều rộng tối đa là 480px */
+    body {
+      font-size: 12px;
+    }
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  a{
+    text-decoration: none;
+    color:black;
+  }
+  .ul li a{
+    text-decoration: none;
+    color: gray;
+}
+.ul1 li a{
+    text-decoration: none;
+    color: gray;
+}
+.ul2 li a{
+    text-decoration: none;
+    color: gray;
+}
+a{
+    text-decoration: none;
+}
+img{
+    object-fit: cover;
+}
+.ul li a:hover{
+    text-decoration: underline;
+    color: white;
+}
+.ul1 li a:hover{
+    text-decoration: underline;
+    color: white;
+}
+.ul2 li a:hover{
+    text-decoration: underline;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+img{
+    object-fit: cover;
+}
+
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 50px;
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    bottom: 50px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}

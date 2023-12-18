@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Địa chỉ nhận hàng</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="myCSS/Dangky.css">
+  <link rel="stylesheet" href="myCSS/Trangchu.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="myCSS/Thongtinvanchuyen.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+
+  </header>
+
+  <main>
+    <div id="wrapper">
+      <div id="header">
+        <nav class=".container-fluid">
+          <a href="index.html" id="logo">
+            <h4>StylistLeather</h4>
+          </a>
+          <ul id="main-menu">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="">Dịch vụ</a>
+              <ul class="sub-menu">
+                <li><a href="Suachua.html">Phục hồi giày </a></li>
+                <li><a href="Customgiay.html">Custom giày </a></li>
+              </ul>
+            </li>
+            <li><a href="">Sản phẩm</a>
+              <ul class="sub-menu">
+                <li><a href="Chongogiay.html">Chống ố giày </a></li>
+                <li><a href="Sonchuyendung.html">Sơn cho giày </a></li>
+                <li><a href="Sanphamvsgiay.html">Bộ vệ sinh giày </a></li>
+                <li><a href="Lotgiay.html">Lót giày </a></li>
+                <li><a href="Combo.html">Combo </a></li>
+              </ul>
+            </li>
+            <li><a href="">Blog giày</a>
+              <ul class="sub-menu">
+                <li><a href="Kinhnghiem.html">Kinh nghiệm </a></li>
+                <li><a href="Tintuc.html">Tin tức</a></li>
+                <li><a href="Xuhuong.html">Xu hướng </a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul id="main-menu">
+            <div class="box">
+              <input type="text" placeholder="Tìm kiếm dịch vụ - sản phẩm ...">
+              <a href="">
+                <i class="fas fa-search"></i>
+              </a>
+            </div>
+            <li><a onclick="togglePopup()"><ion-icon name="information-circle-outline" style="cursor:pointer;"></ion-icon></a></li>
+            <li><a id="btn-open"><ion-icon name="person-outline"></ion-icon></a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- modal popup -->
+      <div id="modal-container">
+        <div id="modal">
+            <div class="modal-header">
+                <h3>Tài khoản</h3>
+                <button id="btn-close"><i class="fa-solid
+                fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+              <p>Tài khoản của bạn</p>
+              <p>Khách hàng mới ?</p>
+              <div>
+                <a href="Dangnhap.html"><button>Đăng nhập</button></a>
+                <a href="Dangky.html"><button>Đăng ký</button></a>
+              </div>
+            </div>
+        </div> 
+      </div>
+      <!-- end modal -->
+
+      <!-- toggle popup -->
+      <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup()">&times;</div><br>
+          <a href="Thongtindathang.html" style="color: black;"><i class="bi bi-box-seam-fill"></i> Thông tin đặt hàng</a><br>
+          <a href="Thongtinvanchuyen.html" style="color: black;"><i class="bi bi-truck"></i> Thông tin vận chuyển</a><br>
+          <a href="Thongtinhoantra.html" style="color: black;"><i class="bi bi-arrow-counterclockwise"></i> Chính sách hoàn trả</a>
+        </div>
+      </div>
+      <!-- end toggle popup -->
+
+
+    </div>
+
+    
+    <div class="container mt-5">
+    <div class="return">
+        <div class="row">
+            <div class="col-sm-7">
+            <h5 style="margin-bottom: -8px;">Thông tin nhận hàng</h5><br>
+            <form><b style="font-size: 14px;">Giới tính</b><br>
+                <input type="checkbox" name="Selection" id="check"> Namㅤㅤ
+                <input type="checkbox" name="Selection" id="check"> Nữ
+            </form><br>
+            <b style="font-size: 14px;">Tên</b><br>
+            <div style="display: inline;
+                        opacity: 0.7;">
+                <input type="text" name="Last name" placeholder="Họ" style="width: 140px; height:40px ;">
+                <input type="text" name="First name" placeholder="Tên" style="width: 140px; height:40px"><br>
+            </div><br>
+            <b style="font-size: 14px;">Số điện thoại</b><br>
+            <div style="display: inline;
+                        opacity: 0.7;">
+                <input type="text" name="Phone number" placeholder="+84 " style="width: 400px; height:40px ;"><br>
+            </div><br>  
+            <form action="" style="margin-bottom: 20px;">
+                <b style="font-size: 14px;">Địa chỉ nhận hàng</b><br>
+                <select name="" id="tinh" onclick="updatetinh()">
+                    <option value="" disabled selected>Tỉnh</option>
+                    <option value="qn">Quảng Ninh</option>
+                    <option value="hp">Hải Phòng</option>
+                </select>
+                <select name="" id="thanhpho" onclick="updatethanhpho()">
+                    <option value="" disabled selected>Thành Phố/Thị Xã/Huyện</option>
+        
+                </select>
+        
+                <select name="" id="phuong" style="margin-bottom: 10px;">
+                    <option value="" disabled selected>Phường / Xã</option>
+                </select><br>
+
+                <input type="text" placeholder="Địa chỉ cụ thể: Khu/số nhà" style="width: 408px;"> 
+            </form>
+            <script>
+                function updatetinh() {
+                    var tinhselect = document.getElementById('tinh');
+                    var thanhphoselect = document.getElementById('thanhpho');
+        
+        
+                    // Lấy giá trị của tỉnh/thành phố được chọn
+                    var selectedtinh = tinhselect.value;
+        
+                    // Xóa tất cả các tùy chọn hiện có trong thẻ Quận/Huyện
+                    thanhphoselect.innerHTML = '';
+        
+                    switch (selectedtinh) {
+                        case 'qn':
+                            addthanhphooption('hl', 'Thành Phố Hạ Long');
+                            addthanhphooption('cm', 'Thành Phố Cẩm Phả ');
+                            addthanhphooption('ub', 'Thành Phố Uông Bí');
+                            addthanhphooption('mc', 'Thành Phố Móng cái');
+                            addthanhphooption('vd', 'Huyện Vân Đồn');
+                            addthanhphooption('qy', 'Thị Xã Quảng Yên');
+                            addthanhphooption('dt', 'Thị Xã Đông Triều');
+                            addthanhphooption('bc', 'Huyện Ba Chẽ');
+                            addthanhphooption('bl', 'Huyện Bình Liêu');
+                            addthanhphooption('ct', 'Huyện Cô Tô');
+                            addthanhphooption('dh', 'Huyện Đầm Hà');
+                            addthanhphooption('hh', 'Huyện Hải Hà');
+                            addthanhphooption('ty', 'Huyện Tiên Yên');
+                            break;
+                        case 'hp':
+                            addthanhphooption('d1', 'Quận 1');
+                            addthanhphooption('d2', 'Quận 2');
+                            addthanhphooption('d3', 'Quận 3');
+                            // Thêm các quận/huyện khác nếu cần
+                            break;
+                        // Thêm các trường hợp khác nếu cần
+                    }
+                }
+                function addthanhphooption(value, text) {
+                    var thanhphoselect = document.getElementById('thanhpho');
+                    var option = document.createElement('option');
+                    option.value = value;
+                    option.text = text;
+                    thanhphoselect.add(option);
+                }
+                // ----------------------------------------------------------------
+        
+        
+                function updatethanhpho() {
+                    var thanhphoselect = document.getElementById('thanhpho');
+                    var phuongselect = document.getElementById('phuong');
+        
+                    var selectedthanhpho = thanhphoselect.value;
+        
+                    phuongselect.innerHTML = '';
+        
+                    switch (selectedthanhpho) {
+                        case 'qy':
+                            addphuongoption('lv', 'Xã Liên Vị')
+                            addphuongoption('lh', 'Phường Liên Hoà')
+                            addphuongoption('pc', 'Phường Phong Cốc')
+                            addphuongoption('tp', 'Xã Tiền Phong')
+                            break;
+                        case 'ub':
+                            addphuongoption('nk', 'Nam Khê')
+                    }
+                }
+                function addphuongoption(value, text) {
+                    var phuongselect = document.getElementById('phuong');
+                    var option = document.createElement('option');
+                    option.value = value;
+                    option.text = text;
+                    phuongselect.add(option);
+                }
+                function showAlert() {
+  alert('Bạn đã thanh công!');
+}
+
+        
+                </script>
+
+
+                <input type="checkbox" name="Selection" id="check"> Tôi đồng ý với <a href="">Điều khoản & Điều kiện.</a><br>
+                <button onclick="showAlert()" id="button-decorate" style="width: 50px;">Lưu</button>
+            </div>
+            <div class="col-sm-5">
+        </div>
+        </div>
+        </div>
+    </div>
+  </main>
+
+  <div style="height: 50px;"></div>
+
+  <footer>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+  </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <script src="myJS/Modalpopup.js"></script>
+    <script src="myJS/Hiddenpassword.js"></script>
+    <script src="myJS/Toggle.js"></script>
+</body>
+
+</html>
